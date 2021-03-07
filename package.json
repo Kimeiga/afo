@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
-    "join": "node app.js"
+    "join": "node app.js",
+    "heroku": "git push heroku main"
   },
   "dependencies": {
     "axios": "^0.21.1",

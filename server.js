@@ -16,6 +16,16 @@ const serverSideClient = new StreamChat(
   process.env.STREAM_APP_SECRET
 );
 
+// define the first route
+app.get("/", function (req, res) {
+  res.send("<h1>Hello World!</h1>");
+});
+
+// define the first route
+app.get("/join", function (req, res) {
+  res.send("<h1>Hello Join!</h1>");
+});
+
 app.post("/join", async (req, res) => {
   if (req.body == null) {
     res.status(500);
