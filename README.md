@@ -36,7 +36,3 @@ Tutorial:
 ## Licence
 
 - [MIT](https://opensource.org/licenses/MIT)
-
-# afo
-
-# afo
