@@ -17,6 +17,9 @@ const serverSideClient = new StreamChat(
 );
 
 app.post("/join", async (req, res) => {
+  if (req.body == null) {
+    res.status(500);
+  }
   const { username } = req.body;
   const token = serverSideClient.createToken(username);
   try {
